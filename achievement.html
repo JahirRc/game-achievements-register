@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/achievement.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/loadAchievements.js">
+    </script>
+  </head>
+  <body>
+    <div class="container">
+        <div class="banner">
+        </div>
+        <div class="achievements">
+
+            <div class="top-things">
+                <input type="text" id="searchInput" placeholder="Search achievement">
+                <input type="button" id="sortByPercent" value="Sort by percentage">
+                <input type="button" id="revertSort" value="Revert sort">
+                <div class="progress-container">
+                    <div class="progress-bar" id="progressBar"></div>
+                </div>
+            </div>
+            
+            
+            <div class="individual-ach">
+
+            </div>
+        </div>
+    </div>
+</body>
+
+<script src="js/filters.js">
+</script>
+
+<script>
+
+    /*
+    const achievements2 = document.querySelectorAll('.achievement');
+    const progressBar = document.getElementById('progressBar');
+    const totalAchievements = achievements2.length; // Assuming you have calculated the total number of achievements
+    let clickedAchievements = JSON.parse(localStorage.getItem('clickedAchievements')) || [];
+
+    achievements2.forEach((achievement, index) => {
+        if (clickedAchievements.includes(index)) {
+            achievement.classList.add('clicked');
+        }
+
+        achievement.addEventListener('click', () => {
+            const achievementIndex = clickedAchievements.indexOf(index);
+            if (achievementIndex !== -1) {
+                clickedAchievements.splice(achievementIndex, 1);
+                achievement.classList.remove('clicked');
+            } else {
+                clickedAchievements.push(index);
+                achievement.classList.add('clicked');
+            }
+            updateProgressBar();
+            localStorage.setItem('clickedAchievements', JSON.stringify(clickedAchievements));
+        });
+    });
+
+    function updateProgressBar() {
+        const obtainedAchievements = clickedAchievements.length;
+        const percentage = (obtainedAchievements / totalAchievements) * 100;
+        progressBar.style.width = `${percentage}%`;
+    }
+
+    window.onload = updateProgressBar; // Update progress bar on page load
+
+    */
+</script>
+</html>
